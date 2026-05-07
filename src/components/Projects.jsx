@@ -60,12 +60,14 @@ function ProjectCard({ project, index }) {
       )}
 
       <div className="flex gap-3 mt-4">
-        <a href="https://github.com/Romeoparajuli" target="_blank" rel="noreferrer" className="text-xs text-slate-400 hover:text-white border border-[#1E1E2E] hover:border-slate-500 px-3 py-1.5 rounded transition-all duration-200">
+        <a href={project.github || 'https://github.com/Romeoparajuli'} target="_blank" rel="noreferrer" className="text-xs text-slate-400 hover:text-white border border-[#1E1E2E] hover:border-slate-500 px-3 py-1.5 rounded transition-all duration-200">
           GitHub →
         </a>
-        <a href="#" className="text-xs text-slate-400 hover:text-white border border-[#1E1E2E] hover:border-slate-500 px-3 py-1.5 rounded transition-all duration-200">
-          Live Demo →
-        </a>
+        {project.live && (
+          <a href={project.live} target="_blank" rel="noreferrer" className="text-xs text-blue-400 hover:text-white border border-blue-500/30 hover:border-blue-500 px-3 py-1.5 rounded transition-all duration-200">
+            Live Demo →
+          </a>
+        )}
       </div>
     </motion.div>
   )

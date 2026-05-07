@@ -11,6 +11,17 @@ export const learning = ['Microservices', 'Kubernetes', 'CI/CD', 'Cloud Deployme
 
 export const projects = [
   {
+    name: 'Food Order — E-Commerce Web App',
+    summary: 'Full-stack food ordering e-commerce platform with product listing, cart management, and order workflow.',
+    features: ['Product listing & filtering', 'Shopping cart management', 'Order placement workflow', 'Responsive UI', 'Fast page loads'],
+    stack: ['React', 'TailwindCSS', 'JavaScript'],
+    highlights: 'Component-driven React architecture, clean state management, responsive design, deployed on Vercel.',
+    challenge: 'Built a seamless cart and order flow with real-time UI updates without external state management libraries.',
+    featured: false,
+    live: 'https://foodorder-puce.vercel.app/',
+    github: 'https://github.com/Romeoparajuli',
+  },
+  {
     name: 'CDMS — Cadet Data Management System',
     summary: 'Enterprise cadet management system for handling training, reports, attendance, and centralized records.',
     features: ['Role-based authentication', 'Dashboard analytics', 'Document management', 'REST API integration', 'Pagination & filtering', 'Responsive UI'],
