@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milan Parajuli — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 13px; color: #1a1a1a; background: #f3f4f6; line-height: 1.5; }
+
+    .download-bar { background: #111; text-align: center; padding: 12px; }
+    .download-bar button { background: #2563eb; color: #fff; border: none; padding: 10px 28px; font-size: 13px; font-weight: 600; border-radius: 6px; cursor: pointer; font-family: inherit; }
+    .download-bar button:hover { background: #1d4ed8; }
+
+    .page { max-width: 820px; margin: 24px auto; background: #fff; padding: 48px 52px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+
+    /* HEADER */
+    .header { border-bottom: 2px solid #1a1a1a; padding-bottom: 14px; margin-bottom: 20px; }
+    .header h1 { font-size: 30px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    .header .title { font-size: 11.5px; font-weight: 500; color: #555; letter-spacing: 2.5px; text-transform: uppercase; margin-top: 5px; }
+    .contact-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; }
+    .contact-row a, .contact-row span { font-size: 12px; color: #374151; text-decoration: none; }
+
+    /* BODY GRID */
+    .body { display: grid; grid-template-columns: 195px 1fr; gap: 30px; }
+
+    /* SECTION */
+    .section { margin-bottom: 20px; }
+    .section-title { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #2563eb; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; margin-bottom: 10px; }
+    .left .section-title { color: #1a1a1a; }
+
+    /* SKILLS */
+    .skill-cat { margin-bottom: 9px; }
+    .skill-cat .cat { font-size: 11px; font-weight: 600; color: #111; margin-bottom: 2px; }
+    .skill-cat .items { font-size: 11.5px; color: #4b5563; line-height: 1.65; }
+
+    /* EDUCATION */
+    .edu-school { font-size: 12.5px; font-weight: 700; }
+    .edu-degree { font-size: 12px; color: #374151; }
+    .edu-period { font-size: 11px; color: #6b7280; margin-top: 2px; }
+
+    /* CERTS */
+    .cert-item { margin-bottom: 8px; }
+    .cert-name { font-size: 12px; font-weight: 600; }
+    .cert-org { font-size: 11px; color: #6b7280; }
+
+    /* SUMMARY */
+    .summary p { font-size: 12.5px; color: #374151; line-height: 1.75; }
+
+    /* EXPERIENCE */
+    .exp-item { margin-bottom: 15px; }
+    .exp-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+    .exp-role { font-size: 13px; font-weight: 700; }
+    .exp-company { font-size: 12px; color: #2563eb; font-weight: 500; }
+    .exp-period { font-size: 11px; color: #6b7280; white-space: nowrap; }
+    .exp-points { margin-top: 5px; padding-left: 14px; }
+    .exp-points li { font-size: 12px; color: #374151; margin-bottom: 3px; line-height: 1.6; }
+
+    /* PROJECTS */
+    .proj-item { margin-bottom: 13px; }
+    .proj-name { font-size: 13px; font-weight: 700; }
+    .proj-stack { font-size: 11px; color: #2563eb; font-weight: 500; margin-bottom: 3px; }
+    .proj-desc { font-size: 12px; color: #374151; line-height: 1.65; }
+
+    /* ACHIEVEMENT */
+    .ach-title { font-size: 12.5px; font-weight: 600; }
+    .ach-desc { font-size: 12px; color: #4b5563; }
+
+    @media print {
+      body { background: #fff; }
+      .download-bar { display: none; }
+      .page { margin: 0; padding: 32px 40px; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="download-bar">
+  <button onclick="window.print()">⬇ &nbsp;Download as PDF &nbsp;(File → Save as PDF)</button>
+</div>
+
+<div class="page">
+
+  <div class="header">
+    <h1>Milan Parajuli</h1>
+    <div class="title">Backend-Focused Full Stack Engineer &nbsp;·&nbsp; Java &nbsp;·&nbsp; Spring Boot &nbsp;·&nbsp; React &nbsp;·&nbsp; MySQL &nbsp;·&nbsp; Docker</div>
+    <div class="contact-row">
+      <span>📍 Tansen-12, Palpa, Nepal</span>
+      <a href="mailto:milankit123@gmail.com">milankit123@gmail.com</a>
+      <span>+977-9867263010</span>
+      <a href="https://github.com/Romeoparajuli" target="_blank">github.com/Romeoparajuli</a>
+      <a href="https://linkedin.com/in/milanparajuli" target="_blank">linkedin.com/in/milanparajuli</a>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- LEFT -->
+    <div class="left">
+
+      <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skill-cat">
+          <div class="cat">Backend</div>
+          <div class="items">Java, Spring Boot, Spring Framework, Spring Core, REST APIs, JPA/Hibernate, JDBC, Servlet, JSP, PHP</div>
+        </div>
+        <div class="skill-cat">
+          <div class="cat">Frontend</div>
+          <div class="items">React, JavaScript, HTML5, CSS3, TailwindCSS</div>
+        </div>
+        <div class="skill-cat">
+          <div class="cat">Database</div>
+          <div class="items">MySQL, Database Design, Query Optimization, ORM</div>
+        </div>
+        <div class="skill-cat">
+          <div class="cat">DevOps & Tools</div>
+          <div class="items">Docker, Git, Bitbucket, Ubuntu, Linux</div>
+        </div>
+        <div class="skill-cat">
+          <div class="cat">Testing & QA</div>
+          <div class="items">Selenium, TestNG, Manual Testing, Automation Testing</div>
+        </div>
+        <div class="skill-cat">
+          <div class="cat">Other</div>
+          <div class="items">Figma, System Design, Technical Documentation, Agile</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="edu-school">Crimson College of Technology</div>
+        <div class="edu-degree">Bachelor of Computer Information Systems (BCIS)</div>
+        <div class="edu-period">8th Semester · Ongoing</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Certifications</div>
+        <div class="cert-item">
+          <div class="cert-name">Core Java / Spring / Hibernate</div>
+          <div class="cert-org">Deerwalk Training Center · Jun 2024</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">DevOps Training</div>
+          <div class="cert-org">Docker · Linux · CI/CD · Deployment</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Cybersecurity Bootcamp</div>
+          <div class="cert-org">7-Day Intensive · Security Fundamentals</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Achievement</div>
+        <div class="ach-title">🏆 First Prize — Startup Idea Challenge</div>
+        <div class="ach-desc">Awarded for innovative scalable digital solution concept demonstrating technical vision and entrepreneurial thinking.</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Currently Learning</div>
+        <div class="items" style="font-size:12px;color:#4b5563;line-height:1.9">
+          Microservices Architecture<br/>
+          Kubernetes<br/>
+          CI/CD Pipelines<br/>
+          Cloud Deployment
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+
+      <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p>
+          Full Stack Developer with professional experience building enterprise ERP systems using Java, Spring Boot, React, and MySQL. Currently working at Infoxit Pvt. Ltd. on Core Accounting and CCI modules in a production environment. Experienced in scalable backend architecture, REST API design, database optimization, and role-based system development. Also leading IT & Communication operations at NCCAA Nepal, driving digital transformation and internal ERP planning at an organizational level.
+        </p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Professional Experience</div>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <div>
+              <div class="exp-role">Junior Full Stack Developer</div>
+              <div class="exp-company">Infoxit Pvt. Ltd. &nbsp;·&nbsp; Butwal, Nepal</div>
+            </div>
+            <div class="exp-period">2025 – Present</div>
+          </div>
+          <ul class="exp-points">
+            <li>Developing and maintaining enterprise ERP modules (Core Accounting, CCI) using Java, Spring Boot, React, and MySQL</li>
+            <li>Designing and optimizing RESTful APIs and database operations for complex business workflows</li>
+            <li>Building role-based enterprise systems with multi-level access control and business logic</li>
+            <li>Collaborating with senior developers on debugging, deployment, and production system maintenance</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <div>
+              <div class="exp-role">Software Development Intern</div>
+              <div class="exp-company">SynthBit Technologies</div>
+            </div>
+            <div class="exp-period">6-Month Internship</div>
+          </div>
+          <ul class="exp-points">
+            <li>Built full-stack enterprise application features using Spring Boot and React</li>
+            <li>Developed HRM system modules — employee management, attendance, and payroll</li>
+            <li>Designed relational database schemas using MySQL and ORM/JPA</li>
+            <li>Followed agile workflows, industry coding standards, and cross-functional team collaboration</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-top">
+            <div>
+              <div class="exp-role">Province Director & Head of IT and Communication</div>
+              <div class="exp-company">NCCAA Nepal</div>
+            </div>
+            <div class="exp-period">Ongoing</div>
+          </div>
+          <ul class="exp-points">
+            <li>Leading IT operations, digital communication strategy, and technical infrastructure at provincial level</li>
+            <li>Planning and developing internal ERP systems for workflow automation and organizational management</li>
+            <li>Managing website development, social media presence, and digital branding initiatives</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="section">
+        <div class="section-title">Projects</div>
+
+        <div class="proj-item">
+          <div class="proj-name">Cadet Data Management System (CDMS)</div>
+          <div class="proj-stack">Java · Spring Boot · React · MySQL · Docker</div>
+          <div class="proj-desc">Enterprise cadet management system with role-based authentication, dashboard analytics, document management, and server-side pagination. Implemented JWT auth, normalized DB schema, and MVC architecture for scalable backend design.</div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">HRM System</div>
+          <div class="proj-stack">Spring Boot · React · MySQL</div>
+          <div class="proj-desc">Human resource management platform covering employee onboarding, leave management, payroll, and reporting. Designed a flexible role-permission system scalable across departments using clean layered architecture and DTO pattern.</div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">Pharmacy Management System</div>
+          <div class="proj-stack">Java · Swing · MySQL</div>
+          <div class="proj-desc">Desktop-based pharmacy system with inventory tracking, prescription management, and sales monitoring. Implemented user authentication, role-based access control, and a real-time reporting module.</div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-name">Automation Testing Suite</div>
+          <div class="proj-stack">Selenium · Java · TestNG</div>
+          <div class="proj-desc">End-to-end automated test suite using Page Object Model and data-driven testing with cross-browser support. Built a reusable driver factory eliminating code duplication across all test scenarios.</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
